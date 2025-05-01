@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion '29.0.3'
+    namespace "com.example.ndkbinderclient"
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.example.ndkbinderclient"
-        minSdkVersion 29
-        targetSdkVersion 30
+        minSdk 29
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
@@ -37,8 +37,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 

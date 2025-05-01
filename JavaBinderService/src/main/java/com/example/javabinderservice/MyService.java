@@ -18,6 +18,7 @@ public class MyService extends Service
     public void onCreate()
     {
         super.onCreate();
+        Log.d(Constants.LOG_TAG, "[MyService] [java] create service");
 
         mBinder = new MyServiceBinder();
     }

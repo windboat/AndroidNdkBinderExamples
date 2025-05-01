@@ -9,9 +9,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
 
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <service
             android:name=".MyService"
             android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.javabinderservice.BIND_MY_SERVICE" />
+            </intent-filter>
         </service>
 
     </application>
